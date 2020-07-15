@@ -14,13 +14,13 @@ public class NodeRun {
         tail.next=new Node<>("Good");
         tail=tail.next;
         tail.next=new Node<>("Bye");
+        System.out.println(head.next.next.next.data);
 
-
-        Node current = head;
-        while(current != null){
-            System.out.println(current.data);
-            current = current.next;
-        }
+//        Node current = head;
+//        while(current != null){
+//            System.out.println(current.data);
+//            current = current.next;
+//        }
 
     }
 }
