@@ -15,13 +15,11 @@ public class NodeRun {
         tail.next=new Node<>("Good");
         tail=tail.next;
         tail.next=new Node<>("Bye");
-        tail=tail.next;
 
         Node current = head;
         while(current != null){
             System.out.println(current.element);
             current = current.next;
         }
-
     }
 }
