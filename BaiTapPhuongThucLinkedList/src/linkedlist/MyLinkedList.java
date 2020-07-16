@@ -48,10 +48,10 @@ public class MyLinkedList<E> {
     }
 
     public E removeLast() {
-        if (size == 0) return null; // Nothing to remove
-        else if (size == 1) { // Only one element in the list
+        if (size == 0) return null;
+        else if (size == 1) {
             Node temp = head;
-            head = tail = null; // list becomes empty
+            head = tail = null;
             size = 0;
             return (E) temp.Data;
         } else {
@@ -69,20 +69,20 @@ public class MyLinkedList<E> {
     }
 
     public E removeFirst() {
-        if (size == 0) return null; // Nothing to delete
+        if (size == 0) return null;
         else {
-            Node temp = head; // Keep the first node temporarily
-            head = head.next; // Move head to point to next node
-            size--; // Reduce size by 1
-            if (head == null) tail = null; // List becomes empty
-            return (E) temp.Data; // Return the deleted element
+            Node temp = head;
+            head = head.next;
+            size--;
+            if (head == null) tail = null;
+            return (E) temp.Data;
         }
     }
 
     public E remove(int index) {
-        if (index < 0 || index >= size) return null; // Out of range
-        else if (index == 0) return removeFirst(); // Remove first
-        else if (index == size - 1) return removeLast(); // Remove last
+        if (index < 0 || index >= size) return null;
+        else if (index == 0) return removeFirst();
+        else if (index == size - 1) return removeLast();
         else {
             Node previous = head;
 
@@ -96,8 +96,5 @@ public class MyLinkedList<E> {
             return (E) current.Data;
         }
     }
-
-
-
 
 }
