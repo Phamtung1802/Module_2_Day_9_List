@@ -1,9 +1,9 @@
 package nodedemo;
 
 public class Node<E> {
-    E element;
+    E data;
     Node<E> next;
     public Node(E e) {
-        element = e;
+        data = e;
     }
 }
