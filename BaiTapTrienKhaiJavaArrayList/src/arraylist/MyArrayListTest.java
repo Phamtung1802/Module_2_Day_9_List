@@ -17,6 +17,10 @@ public class MyArrayListTest {
         Demo.remove(3);
         System.out.println("length= "+ Demo.printElementLenght());
         System.out.println(Demo.printAllElement());
+        System.out.println(Demo.contains(19));
+        System.out.println(Demo.indexOf(6));
+        System.out.println(Demo.get(1).toString());
+        Demo.clear();
 
     }
 }

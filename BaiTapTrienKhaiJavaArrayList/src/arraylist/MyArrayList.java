@@ -64,4 +64,36 @@ public class MyArrayList<E> {
         }
         this.element=Copy;
     }
+
+    public boolean contains(E checkObject){
+        for(int i=0;i<this.element.length;i++){
+            if(this.element[i]==checkObject){
+                return true;
+            }
+        }
+        return false;
+    }
+    public String indexOf(E checkObject){
+        for(int i=0;i<this.element.length;i++){
+            if(this.element[i]==checkObject){
+                return Integer.toString(i);
+            }
+        }
+        return "Khong co phan tu";
+    }
+
+    public E get(int index){
+        for(int i=0;i<this.element.length;i++){
+            if(i==index){
+                return (E)this.element[i];
+            }
+        }
+        return (E)this.element[0];
+    }
+
+    public void clear(){
+        Object Copy[]=new Object[0];
+        this.element=Copy;
+    }
+
 }
