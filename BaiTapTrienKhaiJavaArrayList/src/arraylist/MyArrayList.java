@@ -28,6 +28,19 @@ public class MyArrayList<E> {
         this.size++;
     }
 
+    public void remove(int index){
+        for(int i=index+1;(i<this.element.length)&&(this.element[i]!=null);i++){
+            this.element[i-1]=this.element[i];
+        }
+        this.element[this.element.length-1]=null;
+        Object Copy[]=new Object[this.element.length-1];
+        for(int i=0;i<this.element.length-1;i++){
+            Copy[i]=this.element[i];
+        }
+        this.element=Copy;
+        this.size--;
+    }
+
     public String printElement(int index){
         return element[index].toString();
     }

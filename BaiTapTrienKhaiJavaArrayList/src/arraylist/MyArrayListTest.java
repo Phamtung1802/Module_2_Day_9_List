@@ -14,5 +14,9 @@ public class MyArrayListTest {
         Demo.add(1,9);
         System.out.println("length= "+ Demo.printElementLenght());
         System.out.println(Demo.printAllElement());
+        Demo.remove(3);
+        System.out.println("length= "+ Demo.printElementLenght());
+        System.out.println(Demo.printAllElement());
+
     }
 }
