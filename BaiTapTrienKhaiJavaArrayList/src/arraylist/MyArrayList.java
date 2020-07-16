@@ -19,7 +19,6 @@ public class MyArrayList<E> {
 
     public void add(int index, E element){
         ensureCapacity();
-        E temp=(E) this.element[index];
         for(int j=this.element.length-1; j>index ;j--){
             E temp2=(E)this.element[j-1];
             this.element[j-1]=this.element[j];
