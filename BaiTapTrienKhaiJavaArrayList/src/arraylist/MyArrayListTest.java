@@ -10,8 +10,8 @@ public class MyArrayListTest {
         Demo.add(3,7);
         System.out.println("length= "+ Demo.printElementLenght());
         System.out.println(Demo.printAllElement());
-        Demo.add(1,6);
-        Demo.add(1,9);
+        Demo.add(4,6);
+        Demo.add(5,9);
         System.out.println("length= "+ Demo.printElementLenght());
         System.out.println(Demo.printAllElement());
         Demo.remove(3);
