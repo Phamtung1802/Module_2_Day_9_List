@@ -4,8 +4,8 @@ public class MyLinkedList<E> {
     Node head = null;
     Node tail = null;
     private int size;
-    public Node Head;
-    int numNodes;
+
+
 
     public MyLinkedList() {
     }
